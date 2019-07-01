@@ -17,6 +17,7 @@ const p = require('puppeteer');
     console.log('done')
 })();
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
-}
+http.listen(port, function()
+{
+  console.log('listening on *:' + port);
+});
