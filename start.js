@@ -1,9 +1,8 @@
 //. events: .once, .on('x', callback)
 
 const p = require('puppeteer');
-
 (async () => {
-    const browser = await p.launch().catch(reason => {console.log(reason)});
+    const browser = await p.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']}).catch(reason => {console.log(reason)});
     const page = await browser.newPage().catch(reason => {console.log(reason)});
     page.on('load', () => console.log('PAGE LOADED!'));
     page.on('console', msg => {
