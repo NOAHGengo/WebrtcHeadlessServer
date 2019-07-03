@@ -16,7 +16,6 @@ const p = require('puppeteer');
     //Erigato test page
     //await page.goto('https://erigato.space/TestingMultiplayer/?type=67b3dba8bc6778101892eb77249db32e', { waitUntil: 'load' }).catch(reason => {console.log(reason)});
     //relixes test page
-    await page.goto('https://erigato.space/Explosionman', { waitUntil: 'load' }).catch(reason => {console.log(reason)});
     console.log('done')
 })();
 
