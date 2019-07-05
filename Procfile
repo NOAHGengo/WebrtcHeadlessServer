@@ -1,1 +1,1 @@
-web: node speedtest.js
+web: node start.js
