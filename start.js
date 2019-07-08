@@ -1,4 +1,3 @@
-//. events: .once, .on('x', callback)
 const app = require('polka')();
 var http = require('http').Server(app);
 var port = process.env.PORT || 3000;
@@ -13,9 +12,7 @@ const p = require('puppeteer');
             console.log(`${i}: ${msg.args()[i]}`)
         }
     })
-    //Erigato test page
     await page.goto('THE_URL_TO_HOST', { waitUntil: 'load' }).catch(reason => {console.log(reason)});
-    //relixes test page
     console.log('done')
 })();
 
