@@ -12,7 +12,7 @@ const p = require('puppeteer');
             console.log(`${i}: ${msg.args()[i]}`)
         }
     })
-    await page.goto('https://erigato.space/TestingMultiplayer/?type=67b3dba8bc6778101892eb77249db32e', { waitUntil: 'load' }).catch(reason => {console.log(reason)});
+    await page.goto('https://elated-lovelace-b8e796.netlify.app/', { waitUntil: 'load' }).catch(reason => {console.log(reason)});
     console.log('done')
 })();
 
